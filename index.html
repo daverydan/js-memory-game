@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game!</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game</h1>
+
+    <form id="set-game">
+      <!--<ul>
+        <li>-->
+      <label for="card-count">How many cards?</label>
+      <br>
+      <br>
+      <input type="number" id="card-count" step="2" value="4" min="4" max="12">
+      <br>
+      <button id="play-btn"><i class="fa fa-play fa-3x"></i></button>
+        <!--</li>-->
+        <!--<li>
+        </li>
+      </ul>-->
+    </form>
+
+    <div id="reset-game">
+      <ul>
+        <li>
+          <form>
+            <button id="new-game-btn" title="New Game">
+              <i class="fa fa-play"></i>
+            </button>
+          </form>
+        </li>
+        <li>
+          <h3>Score <span id="score">0</span></h3>
+        </li>
+        <li>
+          <h3 id="best-score">Best Score <span>0</span></h3>
+        </li>
+        <li>
+          <form>
+            <button id="refresh-game-btn" title="Refresh Game">
+              <i class="fa fa-refresh"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <div id="game"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
